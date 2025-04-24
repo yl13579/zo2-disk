@@ -861,6 +861,7 @@ class OptimizerOPTDecoder(MeZO2SGD):
                     module=self.model.layers[i],
                     device=self.device,
                     module_id=str(i))
+        print("测试点9:", torch.cuda.max_memory_allocated())
 
         if N-2 in self.offloading_blocks:
             self.model.layers[N-2] = self.task_offload(
@@ -935,6 +936,8 @@ class OptimizerOPTDecoder(MeZO2SGD):
             compute_sync=False
         )
 
+        print("测试点9:", torch.cuda.max_memory_allocated())
+
         next_cache = next_decoder_cache if use_cache else None
         if not return_dict:
             return tuple(v for v in [hidden_states, next_cache, all_hidden_states, all_self_attns] if v is not None)
@@ -944,6 +947,7 @@ class OptimizerOPTDecoder(MeZO2SGD):
             hidden_states=all_hidden_states,
             attentions=all_self_attns,
         )
+
 
 
 class OptimizerOPTModel(MeZO2SGD):

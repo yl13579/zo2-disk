@@ -1,0 +1,103 @@
+Testing model_name: opt_125m, task_id: causalLM
+PATH CHECK: ['/home/yl_code/meta_zo2/zo2/test/mezo_sgd/hf_opt', '/home/vipuser/miniconda3/envs/zo2/lib/python311.zip', '/home/vipuser/miniconda3/envs/zo2/lib/python3.11', '/home/vipuser/miniconda3/envs/zo2/lib/python3.11/lib-dynload', '/home/vipuser/miniconda3/envs/zo2/lib/python3.11/site-packages', '/home/yl_code/meta_zo2/zo2']
+disk
+开始cpu内存：427.9453125
+Transformer blocks [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11] will be offloaded to disk
+model size: 0.15 B
+  0%|          | 0/3 [00:00<?, ?it/s]/home/yl_code/meta_zo2/zo2/zo2/optimizer/mezo_sgd/zo2.py:469: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state_dict = torch.load(model_path, map_location="cpu")
+                                       0%|          | 0/3 [00:00<?, ?it/s]                                       0%|          | 0/3 [00:00<?, ?it/s] 33%|███▎      | 1/3 [00:00<00:01,  1.08it/s]                                              33%|███▎      | 1/3 [00:01<00:01,  1.08it/s]                                              33%|███▎      | 1/3 [00:01<00:01,  1.08it/s] 67%|██████▋   | 2/3 [00:01<00:00,  1.41it/s]                                              67%|██████▋   | 2/3 [00:02<00:00,  1.41it/s]                                              67%|██████▋   | 2/3 [00:02<00:00,  1.41it/s]100%|██████████| 3/3 [00:02<00:00,  1.59it/s]100%|██████████| 3/3 [00:02<00:00,  1.48it/s]
+测试点1: 158357504
+测试点2: 397432832
+测试点4: 397432832
+1测试点的7: 397432832
+1的测试点8: 635094528
+2测试点的7: 635094528
+2的测试点8: 649270272
+3测试点的7: 649270272
+3的测试点8: 664363520
+4测试点的7: 664363520
+4的测试点8: 679456768
+5测试点的7: 679456768
+5的测试点8: 694550016
+6测试点的7: 694550016
+6的测试点8: 709643264
+7测试点的7: 709643264
+7的测试点8: 723819008
+8测试点的7: 723819008
+8的测试点8: 738912256
+9测试点的7: 738912256
+9的测试点8: 753088000
+10测试点的7: 753088000
+10的测试点8: 768181248
+11测试点的7: 768181248
+11的测试点8: 783274496
+测试点5: 783274496
+测试点6: 798367744
+测试点3: 798367744
+PyTorch Process Peak GPU Memory after iteration 1: 949.12 MB
+Peak CPU Memory after iteration 1: 1016.08 MB
+测试点1: 995229696
+测试点2: 995229696
+测试点4: 995229696
+1测试点的7: 995229696
+1的测试点8: 995229696
+2测试点的7: 995229696
+2的测试点8: 995229696
+3测试点的7: 995229696
+3的测试点8: 995229696
+4测试点的7: 995229696
+4的测试点8: 995229696
+5测试点的7: 995229696
+5的测试点8: 995229696
+6测试点的7: 995229696
+6的测试点8: 995229696
+7测试点的7: 995229696
+7的测试点8: 995229696
+8测试点的7: 995229696
+8的测试点8: 995229696
+9测试点的7: 995229696
+9的测试点8: 995229696
+10测试点的7: 995229696
+10的测试点8: 995229696
+11测试点的7: 995229696
+11的测试点8: 995229696
+测试点5: 995229696
+测试点6: 995229696
+测试点3: 995229696
+PyTorch Process Peak GPU Memory after iteration 2: 949.12 MB
+Peak CPU Memory after iteration 2: 1021.05 MB
+测试点1: 995229696
+测试点2: 995229696
+测试点4: 995229696
+1测试点的7: 995229696
+1的测试点8: 995229696
+2测试点的7: 995229696
+2的测试点8: 995229696
+3测试点的7: 995229696
+3的测试点8: 995229696
+4测试点的7: 995229696
+4的测试点8: 995229696
+5测试点的7: 995229696
+5的测试点8: 995229696
+6测试点的7: 995229696
+6的测试点8: 995229696
+7测试点的7: 995229696
+7的测试点8: 995229696
+8测试点的7: 995229696
+8的测试点8: 995229696
+9测试点的7: 995229696
+9的测试点8: 995229696
+10测试点的7: 995229696
+10的测试点8: 995229696
+11测试点的7: 995229696
+11的测试点8: 995229696
+测试点5: 995229696
+测试点6: 995229696
+测试点3: 995229696
+PyTorch Process Peak GPU Memory after iteration 3: 949.12 MB
+Peak CPU Memory after iteration 3: 1022.19 MB
+Recording Peak GPU and CPU Memory usage...
+Model: opt_125m, Task: causalLM
+ZO2 peak GPU memory: [0;32miteration MB[0m
+ZO2 peak CPU memory: [0;32m1022.19 MB[0m

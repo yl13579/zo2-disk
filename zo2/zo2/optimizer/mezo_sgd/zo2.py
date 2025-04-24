@@ -516,16 +516,7 @@ class MeZO2SGD(MeZOSGD):
                 torch.save(module.state_dict(), f"{module_id}.pth")
                 # print("显存占用（移动前）:", torch.cuda.memory_allocated())
                     # 解除所有参数引用并强制回收
-                for param in module.parameters():
-                    param.data = None  # 解除显存引用
-                for buf in module.buffers():
-                    buf.data = None
-
-                # 强制垃圾回收
-                import gc
-                gc.collect()
-                torch.cuda.empty_cache()
-                # module.to("meta")
+                module.to("meta")
                 # print("显存占用（移动后）:", torch.cuda.memory_allocated())
                 torch.cuda.empty_cache()
             return module

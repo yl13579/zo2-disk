@@ -1,0 +1,71 @@
+Testing model_name: opt_125m, task_id: causalLM
+PATH CHECK: ['/home/yl_code/mete_zo2/z02_422/test/mezo_sgd/hf_opt', '/home/vipuser/miniconda3/envs/zo2/lib/python311.zip', '/home/vipuser/miniconda3/envs/zo2/lib/python3.11', '/home/vipuser/miniconda3/envs/zo2/lib/python3.11/lib-dynload', '/home/vipuser/miniconda3/envs/zo2/lib/python3.11/site-packages', '/home/yl_code/mete_zo2/z02_422']
+cpu
+开始cpu内存：439.22265625
+Transformer blocks [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11] will be offloaded to cpu
+model size: 0.15 B
+  0%|          | 0/30 [00:00<?, ?it/s]                                        0%|          | 0/30 [00:01<?, ?it/s]                                        0%|          | 0/30 [00:01<?, ?it/s]  3%|▎         | 1/30 [00:01<00:53,  1.83s/it]                                                3%|▎         | 1/30 [00:01<00:53,  1.83s/it]                                                3%|▎         | 1/30 [00:01<00:53,  1.83s/it]                                                3%|▎         | 1/30 [00:01<00:53,  1.83s/it]                                                3%|▎         | 1/30 [00:01<00:53,  1.83s/it] 10%|█         | 3/30 [00:01<00:14,  1.89it/s]                                               10%|█         | 3/30 [00:02<00:14,  1.89it/s]                                               10%|█         | 3/30 [00:02<00:14,  1.89it/s]                                               10%|█         | 3/30 [00:02<00:14,  1.89it/s]                                               10%|█         | 3/30 [00:02<00:14,  1.89it/s] 17%|█▋        | 5/30 [00:02<00:07,  3.35it/s]                                               17%|█▋        | 5/30 [00:02<00:07,  3.35it/s]                                               17%|█▋        | 5/30 [00:02<00:07,  3.35it/s]                                               17%|█▋        | 5/30 [00:02<00:07,  3.35it/s]                                               17%|█▋        | 5/30 [00:02<00:07,  3.35it/s] 23%|██▎       | 7/30 [00:02<00:04,  4.86it/s]                                               23%|██▎       | 7/30 [00:02<00:04,  4.86it/s]                                               23%|██▎       | 7/30 [00:02<00:04,  4.86it/s]                                               23%|██▎       | 7/30 [00:02<00:04,  4.86it/s]                                               23%|██▎       | 7/30 [00:02<00:04,  4.86it/s] 30%|███       | 9/30 [00:02<00:03,  6.43it/s]                                               30%|███       | 9/30 [00:02<00:03,  6.43it/s]                                               30%|███       | 9/30 [00:02<00:03,  6.43it/s]                                               30%|███       | 9/30 [00:02<00:03,  6.43it/s]                                               30%|███       | 9/30 [00:02<00:03,  6.43it/s] 37%|███▋      | 11/30 [00:02<00:02,  7.69it/s]                                                37%|███▋      | 11/30 [00:02<00:02,  7.69it/s]                                                37%|███▋      | 11/30 [00:02<00:02,  7.69it/s]                                                37%|███▋      | 11/30 [00:02<00:02,  7.69it/s]                                                37%|███▋      | 11/30 [00:02<00:02,  7.69it/s] 43%|████▎     | 13/30 [00:02<00:01,  8.77it/s]                                                43%|████▎     | 13/30 [00:02<00:01,  8.77it/s]                                                43%|████▎     | 13/30 [00:02<00:01,  8.77it/s]                                                43%|████▎     | 13/30 [00:02<00:01,  8.77it/s]                                                43%|████▎     | 13/30 [00:02<00:01,  8.77it/s] 50%|█████     | 15/30 [00:02<00:01,  9.96it/s]                                                50%|█████     | 15/30 [00:02<00:01,  9.96it/s]                                                50%|█████     | 15/30 [00:02<00:01,  9.96it/s]                                                50%|█████     | 15/30 [00:03<00:01,  9.96it/s]                                                50%|█████     | 15/30 [00:03<00:01,  9.96it/s] 57%|█████▋    | 17/30 [00:03<00:01, 10.91it/s]                                                57%|█████▋    | 17/30 [00:03<00:01, 10.91it/s]                                                57%|█████▋    | 17/30 [00:03<00:01, 10.91it/s]                                                57%|█████▋    | 17/30 [00:03<00:01, 10.91it/s]                                                57%|█████▋    | 17/30 [00:03<00:01, 10.91it/s] 63%|██████▎   | 19/30 [00:03<00:00, 11.45it/s]                                                63%|██████▎   | 19/30 [00:03<00:00, 11.45it/s]                                                63%|██████▎   | 19/30 [00:03<00:00, 11.45it/s]                                                63%|██████▎   | 19/30 [00:03<00:00, 11.45it/s]                                                63%|██████▎   | 19/30 [00:03<00:00, 11.45it/s] 70%|███████   | 21/30 [00:03<00:00, 11.79it/s]                                                70%|███████   | 21/30 [00:03<00:00, 11.79it/s]                                                70%|███████   | 21/30 [00:03<00:00, 11.79it/s]                                                70%|███████   | 21/30 [00:03<00:00, 11.79it/s]                                                70%|███████   | 21/30 [00:03<00:00, 11.79it/s] 77%|███████▋  | 23/30 [00:03<00:00, 12.34it/s]                                                77%|███████▋  | 23/30 [00:03<00:00, 12.34it/s]                                                77%|███████▋  | 23/30 [00:03<00:00, 12.34it/s]                                                77%|███████▋  | 23/30 [00:03<00:00, 12.34it/s]                                                77%|███████▋  | 23/30 [00:03<00:00, 12.34it/s] 83%|████████▎ | 25/30 [00:03<00:00, 12.53it/s]                                                83%|████████▎ | 25/30 [00:03<00:00, 12.53it/s]                                                83%|████████▎ | 25/30 [00:03<00:00, 12.53it/s]                                                83%|████████▎ | 25/30 [00:03<00:00, 12.53it/s]                                                83%|████████▎ | 25/30 [00:03<00:00, 12.53it/s] 90%|█████████ | 27/30 [00:03<00:00, 12.93it/s]                                                90%|█████████ | 27/30 [00:03<00:00, 12.93it/s]                                                90%|█████████ | 27/30 [00:03<00:00, 12.93it/s]                                                90%|█████████ | 27/30 [00:03<00:00, 12.93it/s]                                                90%|█████████ | 27/30 [00:03<00:00, 12.93it/s] 97%|█████████▋| 29/30 [00:03<00:00, 12.93it/s]                                                97%|█████████▋| 29/30 [00:04<00:00, 12.93it/s]                                                97%|█████████▋| 29/30 [00:04<00:00, 12.93it/s]100%|██████████| 30/30 [00:04<00:00,  7.42it/s]
+Peak GPU Memory after iteration 1: 10512.94 MB
+Peak CPU Memory after iteration 1: 1301.66 MB
+Peak GPU Memory after iteration 2: 10512.94 MB
+Peak CPU Memory after iteration 2: 1301.66 MB
+Peak GPU Memory after iteration 3: 10512.94 MB
+Peak CPU Memory after iteration 3: 1301.66 MB
+Peak GPU Memory after iteration 4: 10512.94 MB
+Peak CPU Memory after iteration 4: 1301.66 MB
+Peak GPU Memory after iteration 5: 10512.94 MB
+Peak CPU Memory after iteration 5: 1301.79 MB
+Peak GPU Memory after iteration 6: 10512.94 MB
+Peak CPU Memory after iteration 6: 1301.79 MB
+Peak GPU Memory after iteration 7: 10512.94 MB
+Peak CPU Memory after iteration 7: 1301.79 MB
+Peak GPU Memory after iteration 8: 10512.94 MB
+Peak CPU Memory after iteration 8: 1301.79 MB
+Peak GPU Memory after iteration 9: 10512.94 MB
+Peak CPU Memory after iteration 9: 1301.79 MB
+Peak GPU Memory after iteration 10: 10512.94 MB
+Peak CPU Memory after iteration 10: 1301.79 MB
+Peak GPU Memory after iteration 11: 10512.94 MB
+Peak CPU Memory after iteration 11: 1301.79 MB
+Peak GPU Memory after iteration 12: 10512.94 MB
+Peak CPU Memory after iteration 12: 1301.79 MB
+Peak GPU Memory after iteration 13: 10512.94 MB
+Peak CPU Memory after iteration 13: 1301.79 MB
+Peak GPU Memory after iteration 14: 10512.94 MB
+Peak CPU Memory after iteration 14: 1301.79 MB
+Peak GPU Memory after iteration 15: 10512.94 MB
+Peak CPU Memory after iteration 15: 1301.79 MB
+Peak GPU Memory after iteration 16: 10512.94 MB
+Peak CPU Memory after iteration 16: 1301.79 MB
+Peak GPU Memory after iteration 17: 10512.94 MB
+Peak CPU Memory after iteration 17: 1301.79 MB
+Peak GPU Memory after iteration 18: 10512.94 MB
+Peak CPU Memory after iteration 18: 1301.79 MB
+Peak GPU Memory after iteration 19: 10512.94 MB
+Peak CPU Memory after iteration 19: 1301.79 MB
+Peak GPU Memory after iteration 20: 10512.94 MB
+Peak CPU Memory after iteration 20: 1301.79 MB
+Peak GPU Memory after iteration 21: 10512.94 MB
+Peak CPU Memory after iteration 21: 1301.79 MB
+Peak GPU Memory after iteration 22: 10512.94 MB
+Peak CPU Memory after iteration 22: 1301.79 MB
+Peak GPU Memory after iteration 23: 10512.94 MB
+Peak CPU Memory after iteration 23: 1301.79 MB
+Peak GPU Memory after iteration 24: 10512.94 MB
+Peak CPU Memory after iteration 24: 1301.79 MB
+Peak GPU Memory after iteration 25: 10512.94 MB
+Peak CPU Memory after iteration 25: 1301.79 MB
+Peak GPU Memory after iteration 26: 10512.94 MB
+Peak CPU Memory after iteration 26: 1301.79 MB
+Peak GPU Memory after iteration 27: 10512.94 MB
+Peak CPU Memory after iteration 27: 1301.79 MB
+Peak GPU Memory after iteration 28: 10512.94 MB
+Peak CPU Memory after iteration 28: 1301.79 MB
+Peak GPU Memory after iteration 29: 10512.94 MB
+Peak CPU Memory after iteration 29: 1301.79 MB
+Peak GPU Memory after iteration 30: 10512.94 MB
+Peak CPU Memory after iteration 30: 1301.79 MB
+Recording Peak GPU and CPU Memory usage...
+Model: opt_125m, Task: causalLM
+ZO2 peak GPU memory: [0;32m10512.94 MB[0m
+ZO2 peak CPU memory: [0;32m1301.79 MB[0m

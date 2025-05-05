@@ -26,7 +26,7 @@ def get_args():
     args.add_argument("--batch_size", type=int, default=1)
     args.add_argument("--sequence_length", type=int, default=2048)
     args.add_argument("--overlap", type=str, default="all")
-    args.add_argument("--offloading_device", type=str, default="disk")
+    args.add_argument("--offloading_device", type=str, default="./opt_125m/")
     args.add_argument("--working_device", type=str, default="cuda:0")
     args = args.parse_args()
     args.model_dtype = dtype_lookup[args.model_dtype]

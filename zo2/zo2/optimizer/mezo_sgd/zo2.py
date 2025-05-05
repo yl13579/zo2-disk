@@ -458,7 +458,7 @@ class MeZO2SGD(MeZOSGD):
                 module = module.to(device, *args, **kwargs)
                 # print("显存占用（上传到GPU后）:", torch.cuda.memory_allocated())
             else:
-                model_path = f"{module_id}.pth"
+                model_path = f"{offloading_device}{module_id}.pth"
                 if os.path.exists(model_path):
                     is_meta = next(module.parameters()).is_meta
                     # 2. 如果是元设备，调用 to_empty() 在目标设备分配空内存
@@ -513,10 +513,23 @@ class MeZO2SGD(MeZOSGD):
                 # print("显存占用（卸载到CPU后）:", torch.cuda.memory_allocated())
                 # torch.cuda.empty_cache()
             else:
-                torch.save(module.state_dict(), f"{module_id}.pth")
+                torch.save(module.state_dict(), f"{offloading_device}{module_id}.pth")
+                # print(module)
+                # print(module.state_dict())
                 # print("显存占用（移动前）:", torch.cuda.memory_allocated())
                     # 解除所有参数引用并强制回收
+                # print(module.parameters())
+                # print(module.buffers())
                 module.to("meta")
+                # 打印所有参数（名称 + 张量信息）
+                # print("Parameters:")
+                # for name, param in module.named_parameters():
+                #     print(f"  {name} | Shape: {param.shape} | Device: {param.device} | Dtype: {param.dtype}")
+
+                # 打印所有缓冲区（名称 + 张量信息）
+                # print("\nBuffers:")
+                # for name, buf in module.named_buffers():
+                #     print(f"  {name} | Shape: {buf.shape} | Device: {buf.device} | Dtype: {buf.dtype}")
                 # print("显存占用（移动后）:", torch.cuda.memory_allocated())
                 torch.cuda.empty_cache()
             return module
